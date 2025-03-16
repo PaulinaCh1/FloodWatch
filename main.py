@@ -53,7 +53,7 @@ async def get_stations():
 async def get_readings(station_id: str):
     """Get readings for a specific station"""
     try:
-        # Use UTC-aware datetime
+        # Using UTC-aware datetime
         time_filter = datetime.now(timezone.utc) - timedelta(hours=24)
         
         async with httpx.AsyncClient() as client:

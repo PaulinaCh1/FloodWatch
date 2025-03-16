@@ -23,16 +23,18 @@
         </header>
 
         <!-- Chart Container -->
-        <div class="chart-container">
+        <div class="content-container chart-container">
             <div class="chart-header">
                 <h2 id="chartTitle">Water Level Readings</h2>
                 <div class="loading-spinner" id="chartLoading" style="display: none;"></div>
             </div>
-            <canvas id="readingsChart"></canvas>
+            <div class="canvas-wrapper">
+                <canvas id="readingsChart"></canvas>
+            </div>
         </div>
         
-        <!-- Completely separate table wrapper -->
-        <div id="table-wrapper" style="display: none; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); margin-top: 20px;">
+        <!-- Table container -->
+        <div id="table-wrapper" class="content-container" style="display: none;">
             <h3>Station Readings - Last 24 Hours</h3>
             <div id="readings-table-container"></div>
         </div>
