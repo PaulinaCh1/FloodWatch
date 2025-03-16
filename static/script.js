@@ -2,8 +2,7 @@
  * Flood Monitoring System
  * 
  * This script handles the visualization of flood monitoring data
- * from various stations throughout the UK, displaying both a chart
- * and tabular representation of water level readings.
+ *  displaying both a chart and tabular representation of water level readings.
  */
 document.addEventListener('DOMContentLoaded', function() {
     // DOM element references
@@ -82,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const response = await fetch(`/api/readings/${stationId}`);
             
             if (!response.ok) {
-                throw new Error(`Failed to load readings: ${response.status}`);
+                throw new Error(`Failed to load readings: ${response.status} :(`);
             }
             
             const readings = await response.json();

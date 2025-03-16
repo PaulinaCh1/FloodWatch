@@ -9,7 +9,7 @@ from urllib.parse import quote
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Flood Monitoring System", version="1.0.0")
+app = FastAPI(title="Flood Watch")
 
 # Configure static files and templates
 app.mount("/static", StaticFiles(directory="static"), name="static")
